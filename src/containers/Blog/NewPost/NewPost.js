@@ -25,7 +25,10 @@ class NewPost extends Component {
         axios.post('/posts', post)
             .then(response => {
                 console.log(response);
-                this.setState({submitted: true})
+                this.props.history.replace('/posts');
+                // history.push() lets us to go back to our page, but history.replace() doesnt
+                // and does the same as the redirect component!
+                // this.setState({submitted: true})
             });
     }
 
