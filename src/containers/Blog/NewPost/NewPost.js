@@ -53,7 +53,7 @@ class NewPost extends Component {
                 <button onClick={this.postDataHandler}>Add Post</button>
             </div>
         );
-    }
+    } 
 }
 
 export default NewPost;
